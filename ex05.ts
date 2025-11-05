@@ -14,11 +14,11 @@ class macaco {
     this.bucho = bucho
   }
 
-  comer(){
+  comer(): void{
     console.log(`O ${macaco} está comendo ${this.bucho}`)
   }
 
-  verBucho(){
+  verBucho(): void{
     if(this.bucho.length > 0){
       console.log(`O bucho do macaco tem ${this.bucho}`)
     } else {
@@ -26,7 +26,7 @@ class macaco {
     }
   }
 
-  digerir(){
+  digerir(): void{
     if(this.bucho.length > 0){
       function mastigando(){
         console.log(`O ${macaco} está mastigando...`)
@@ -42,12 +42,12 @@ class macaco {
   }
 }
 
-const macaco1 = new macaco("Macaquinho", ["banana", "teste"])
+const macaco1 = new macaco("Macaquinho", ["Banana", "Manga", "Pequi"])
 macaco1.comer()
 macaco1.digerir()
 macaco1.verBucho()
 
-const macaco2 = new macaco("Macacão", ["Maçã", "teste2"])
+const macaco2 = new macaco("Macacão", ["Maçã", "Acerola", "Goiaba"])
 macaco2.comer()
 macaco2.digerir()
 macaco2.verBucho()
