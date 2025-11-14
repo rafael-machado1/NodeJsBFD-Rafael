@@ -14,13 +14,11 @@ enum precoCombustivel{ //Os preços foram pesquisados em 10/11/25 e cotados para
   gasolina = 6.17, 
   etanol = 4.13,
   diesel = 6.28,
-  eletricidade = 0.617 //Assumindo a tarifa convencional em GOIÁS (0.617) e um custo médio de 15 kwh por 100km rodados
 }
 
 interface abastecimento{
   abastecerVL():void{}
   abastecerPL():void{}
-
 }
 
 class bomba{

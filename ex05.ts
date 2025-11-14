@@ -6,8 +6,8 @@ Crie 2 macacos
 Alimente-os com 3 alimentos diferentes e verificando o conteúdo do estômago a cada refeição.
 Experimente fazer com que um macaco coma o outro. É possível criar um macaco canibal?*/
 class macaco {
-  nome: string
-  bucho: string[]
+  public nome: string
+  public bucho: string[]
 
   constructor(nome: string, bucho: string[]){
     this.nome = nome
@@ -15,7 +15,7 @@ class macaco {
   }
 
   comer(): void{
-    console.log(`O ${macaco} está comendo ${this.bucho}`)
+    console.log(`O ${this.nome} está comendo ${this.bucho}`)
   }
 
   verBucho(): void{
@@ -29,12 +29,12 @@ class macaco {
   digerir(): void{
     if(this.bucho.length > 0){
       function mastigando(){
-        console.log(`O ${macaco} está mastigando...`)
+        console.log(`O ${this.nome} está mastigando...`)
       }
       const repetindo = setInterval(mastigando, 2000)
       setTimeout(() => {
         clearInterval(repetindo);
-        console.log(`O ${macaco} terminou de digerir!`)
+        console.log(`O ${this.nome} terminou de digerir!`)
       }, 6000);
     } else {
       console.log(`[ERROR] Não é possível digerir sem conteúdo no bucho`)
