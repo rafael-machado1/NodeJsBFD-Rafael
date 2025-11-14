@@ -10,23 +10,32 @@ Alterar quantidade de combustível: altera a quantidade de combustível restante
 Sempre que acontecer um abastecimento é necessário atualizar a quantidade de combustível 
 total na bomba. A bomba inicia com 100 L de combustível.*/
 
-enum precoCombustivel{ //Os preços foram pesquisados em 10/11/25 e cotados para o Estado de Goiás
-  gasolina = 6.17, 
-  etanol = 4.13,
-  diesel = 6.28,
+/*Para quem estiver lendo esse código, nesse exercício tentei entender melhor e aplicar os princípios SOLID.
+Por isso, vão existir vários comentários sobre todo o código, como meio de me localizar*/
+
+interface ItipoCombustivel{  // Nessa primeira parte tentei utilizar do princípio das interfaces
+  gasolina: number;
+  etanol: number;
+  diesel: number;
 }
 
-interface abastecimento{
-  abastecerVL():void{}
-  abastecerPL():void{}
+const precosCombustivel: ItipoCombustivel = {
+  gasolina: 5,
+  etanol: 3,
+  diesel: 4
+}
+
+abstract class Iabastecimento{
+  abastecerValor():void{}
+  abastecerLitro():void{}
 }
 
 class bomba{
-  tipoDeCombustivel: string
-  valorLitro: precoCombustivel
+  tipoDeCombustivel: ItipoCombustivel
+  valorLitro: precosCombustivel
   qtdCombustivel: number
 
-  constructor(tipoDeCombustivel: string, valorLitro: number){
+  constructor(tipoDeCombustivel: ItipoCombustivel, valorLitro: precosCombustivel){
     this.tipoDeCombustivel = tipoDeCombustivel
     this.valorLitro = valorLitro
     this.qtdCombustivel = 100
