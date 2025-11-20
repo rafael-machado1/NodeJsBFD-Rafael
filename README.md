@@ -4,19 +4,10 @@
 
 ---
 
-#### `main` : Nessa branch, todas as configurações do TypeScript estão localizadas
+#### `main` : Nessa branch, todas as configurações do TypeScript estão armazenadas
 
----
+#### `Funções` : Nessa branch, todos os exercícios relacionados às funções estão armazenados 
 
-#### > Funções : Nessa branch, todos os exercícios relacionados às funções estão armazenados 
-- `func1.js` : Escreva uma função em JavaScript que mostre na tela a mensagem “Bom dia, Mundo!!!”.
-
-- `func2.js` : Escreva uma função que retorne a área de um triângulo, a partir dos valores de base e altura fornecidos.
-
-- `factorial.js` : Escreva uma função que calcule e retorne o fatorial de um número inteiro fornecido pelo usuário.
-
----
-
-#### > POO : Nessa branch, todos os exercícios relacionados à POO estão armazenados.
+#### `POO` : Nessa branch, todos os exercícios relacionados à POO estão armazenados.
 
 ---
