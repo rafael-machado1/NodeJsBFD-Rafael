@@ -48,7 +48,8 @@ class bomba{
   }
 
   abastecerLitro(litro: number):void{
-    if(this.qtdCombustivel > 0){const precoPorLitro = litro * this.valorLitro
+    if(this.qtdCombustivel > 0){
+    const precoPorLitro = litro * this.valorLitro
     let restoLitro = this.qtdCombustivel - litro
     this.qtdCombustivel = restoLitro
     console.log(`[PREÇO] ${litro} litros totaliza ${precoPorLitro.toFixed(2)}R$`)
