@@ -37,11 +37,11 @@ class bomba{
 
   abastecerValor(valor: number):void{
     if(this.qtdCombustivel > 0){
-    const qtdLitros = valor / this.valorLitro
-    let restoValor = this.qtdCombustivel - qtdLitros
-    this.qtdCombustivel = restoValor 
-    console.log(`[ABASTECIMENTO] Por ${this.valorLitro}R$ o litro você abastece ${qtdLitros.toFixed(2)} litros`)
-    console.log(`[ABASTECIMENTO] Agora restam ${restoValor.toFixed(2)} na bomba`)
+      const qtdLitros = valor / this.valorLitro
+      let restoValor = this.qtdCombustivel - qtdLitros
+      this.qtdCombustivel = restoValor 
+      console.log(`[ABASTECIMENTO] Por ${this.valorLitro}R$ o litro você abastece ${qtdLitros.toFixed(2)} litros`)
+      console.log(`[ABASTECIMENTO] Agora restam ${restoValor.toFixed(2)} na bomba`)
     } else {
       console.log(`[ERRO] Não há combustível o suficiente na bomba (${this.qtdCombustivel} litros na bomba)`)      
     }
@@ -49,11 +49,11 @@ class bomba{
 
   abastecerLitro(litro: number):void{
     if(this.qtdCombustivel > 0){
-    const precoPorLitro = litro * this.valorLitro
-    let restoLitro = this.qtdCombustivel - litro
-    this.qtdCombustivel = restoLitro
-    console.log(`[PREÇO] ${litro} litros totaliza ${precoPorLitro.toFixed(2)}R$`)
-    console.log(`[ABASTECIMENTO] Agora restam ${this.qtdCombustivel.toFixed(2)} litros na bomba`)
+      const precoPorLitro = litro * this.valorLitro
+      let restoLitro = this.qtdCombustivel - litro
+      this.qtdCombustivel = restoLitro
+      console.log(`[PREÇO] ${litro} litros totaliza ${precoPorLitro.toFixed(2)}R$`)
+      console.log(`[ABASTECIMENTO] Agora restam ${this.qtdCombustivel.toFixed(2)} litros na bomba`)
     } else {
       console.log(`[ERRO] Não há combustível o suficiente na bomba (${this.qtdCombustivel} litros na bomba)`)
     }
