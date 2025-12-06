@@ -1,0 +1,1 @@
+//O objetivo é utilizar o padrão de projeto Factory Method
