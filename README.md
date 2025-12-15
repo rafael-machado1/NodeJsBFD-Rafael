@@ -4,7 +4,7 @@
 
 ---
 
-#### [funcoesJS](#./funcoesJS) : Nessa arquivo, todos os exercícios relacionados às funções estão armazenados 
+#### [funcoesJS](#/funcoesJS) : Nessa arquivo, todos os exercícios relacionados às funções estão armazenados 
 
 #### `exerciciosPOO` : Nesse arquivo, todos os exercícios relacionados à POO estão armazenados.
 
