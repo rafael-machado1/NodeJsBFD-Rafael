@@ -10,6 +10,6 @@
 
 #### [package](/package.json) || [package-lock](/package-lock.json) : Nesses arquivos estão os módulos e configurações usados 
 
-
+#### [restAPI](/restAPI/src) : Nessa pasta, foi feita uma construção de uma aplicação back-end REST API com NodeJS, em Typescript, usando Express e SQLite
 
 ---
