@@ -7,7 +7,7 @@
     "express": "^5.2.1",
     "prompt-sync": "^4.2.0",
     "type": "module",
-    "main": "dist/index.js",
+    "main": "dist/index.ts",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
